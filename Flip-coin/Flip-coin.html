@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Flip-coin.css">
+  <title>Flip a coin</title>
+</head>
+<body>
+  
+  <h1>Guess, flip the coin 👇</h1>
+  <div class="Game-container">
+   <button onclick="
+      const randomNumber = Math.random();
+      let result = '' ;
+      let rightGuess = '' ;
+      let yourGuess = 'Heads';
+      if (randomNumber >= 0 && randomNumber < 1 / 2){
+      rightGuess = 'Heads' ;
+      result = 'Your guess was right 👏.';
+      }else if (randomNumber >= 1 / 2 && randomNumber < 1){
+      rightGuess = 'Tails' ;
+      result = 'Your guess was false 👎.';
+      }alert(`You choosed ${yourGuess}. ${result}`);
+      ">
+      Heads
+    </button>
+
+    <button onclick="
+      const randomNumber = Math.random();
+      let result = '' ;
+      let rightGuess = '' ;
+      let yourGuess = 'Heads';
+      yourGuess = 'Tails'
+      if (randomNumber >= 0 && randomNumber < 1 / 2){
+      rightGuess = 'Heads' ;
+      result = 'Your guess was false 👎.';
+      }else if (randomNumber >= 1 / 2 && randomNumber < 1){
+      rightGuess = 'Tails' ;
+      }alert(`You choosed ${yourGuess}. ${result}`);
+      " >
+      Tails
+    </button>
+  </div>
+      
+  
+</body>
+</html>
